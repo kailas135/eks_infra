@@ -14,7 +14,7 @@ pipeline {
     }
 
     environment {
-        AWS_REGION = "${params.region}"  // Use parameter for dynamic region
+        AWS_REGION = "${params.region}"
         AWS_ACCESS_KEY_ID = credentials('1c458e9c-8554-4334-849c-a7a415a9b559')
         AWS_SECRET_ACCESS_KEY = credentials('1c458e9c-8554-4334-849c-a7a415a9b559')
         KUBECTL_VERSION = 'v1.31.1'
