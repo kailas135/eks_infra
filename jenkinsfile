@@ -23,7 +23,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git branch: 'main', url: 'https://github.com/kailas135/JenkinsMsaterSlave.git'
+                git branch: 'main', url: 'https://github.com/kailas135/eks_infra.git'
             }
         }
 
