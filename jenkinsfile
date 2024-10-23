@@ -43,19 +43,19 @@ pipeline {
             }
         }
 
-        // stage('Terraform Apply') {
-        //     steps {
-        //         script {
-        //             sh 'terraform apply -auto-approve'
-        //         }
-        //     }
-        // }
-
-        stage('Terraform Destroy') {
+        stage('Terraform Apply') {
             steps {
-                sh 'terraform destroy -auto-approve'
+                script {
+                    sh 'terraform apply -auto-approve'
+                }
             }
         }
+
+        // stage('Terraform Destroy') {
+        //     steps {
+        //         sh 'terraform destroy -auto-approve'
+        //     }
+        // }
 
 
     }
